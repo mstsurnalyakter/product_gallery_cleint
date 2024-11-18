@@ -1,17 +1,3 @@
-// import React from 'react'
-
-// const ProductSection = () => {
-//   return (
-//     <div>ProductSection</div>
-//   )
-// }
-
-// export default ProductSection
-
-
-
-
-import { Link } from "react-router-dom";
 import banner from "../../../public/banner/banner6.jpg";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
