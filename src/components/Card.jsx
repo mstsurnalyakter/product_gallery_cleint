@@ -14,10 +14,8 @@ const Card = ({ product }) => {
     productImage,
     productName,
     ratings,
+    _id
   } = product || {};
-  console.log(product);
-  // const checkStartDate = new Date(session?.registrationStartDate) <= new Date();
-  // const checkEndDate = new Date(session?.registrationEndDate) >= new Date();
 
   return (
     <div>
@@ -45,25 +43,25 @@ const Card = ({ product }) => {
             <p>
               <b>Category</b>:{category}
             </p>
-            <p>
+            {/* <p>
               <b>Creation Date</b>:
               {format(new Date(creationDate), "MMMM dd, yyyy, hh:mm:ss a")}
             </p>
             <p>
               <b>Date Added</b>:{format(new Date(dateAdded), "MMMM dd, yyyy")}
-            </p>
-            <p title={description} className="dark:text-gray-800 text-sm">
+            </p> */}
+            {/* <p title={description} className="dark:text-gray-800 text-sm">
               {description.slice(0, 150)}....
-            </p>
+            </p> */}
           </div>
-          {/* <Link to={`/productDetail/${._id}`}>
+          <Link to={`/productDetail/${_id}`}>
             <button
               type="button"
-              className="flex items-center bg-[#4D95EA] text-white hover:bg-[#358ef4]  justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
+              className="flex items-center bg-[#07BE65] text-white hover:bg-[#07BE65]  justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50"
             >
-              Read More
+              View Details
             </button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>
